@@ -1,0 +1,8 @@
+---
+- name: Deploy
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Include hello role
+      ansible.builtin.include_role:
+        name: hello
