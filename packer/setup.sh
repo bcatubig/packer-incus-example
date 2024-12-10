@@ -14,5 +14,5 @@ apt-get -y install \
 
 # Add ubuntu user
 useradd --create-home -s /usr/bin/zsh -G sudo -U example
-echo "ubuntu ALL=(ALL) NOPASSWD:ALL" >/etc/sudoers.d/90-incus
+echo "example ALL=(ALL) NOPASSWD:ALL" >/etc/sudoers.d/90-incus
 chmod 440 /etc/sudoers.d/90-incus
